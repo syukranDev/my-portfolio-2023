@@ -5,6 +5,7 @@ import React, {useState} from "react"
 import { RiMoonFill, RiSunLine} from 'react-icons/ri'
 import { IoMdMenu, IoMdClose } from 'react-icons/io'
 import { useTheme } from "next-themes"
+import { GoVerified } from 'react-icons/go'
 
 
 const NAV_ITEMS = [
@@ -32,12 +33,15 @@ export const Navbar = () => {
 
 
   return (
-     <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow">
+     <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-gray-950">
         <div className="justify-between md:items-center md:flex">
             <div>
                 <div className="flex items-center justify-between py-3">
                     <div className="md:py-5 md:block">
-                        <h2 className="text-2xl font-bold">Syukran Soleh</h2>
+                        <div className="flex flex-row">
+                            <h2 className="font-sans text-2xl font-bold  antialiased">SyukranDev</h2>
+                            <GoVerified size={20} className="mt-2 ml-2 fill-sky-400 antialiased"/>
+                        </div>
                     </div>
                     <div className="md:hidden">
                         <button onClick={() => setNavbar(!navbar)}>
@@ -57,7 +61,7 @@ export const Navbar = () => {
                                     <Link
                                         key={idx}
                                         href={item.page}
-                                        className="block lg:inline-block"
+                                        className="block lg:inline-block font-semibold"
                                         
                                         activeClass='active'
                                         spy={true}

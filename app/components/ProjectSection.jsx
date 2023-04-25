@@ -41,7 +41,7 @@ const ProjectsSection = () => {
     <section id="projects" className="pt-2">
       <h1 className="my-10 text-center font-bold text-4xl">
         Projects Involved
-        <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+        <hr className="w-6 h-1 mx-auto my-4 bg-gray-700 dark:bg-white border-0 rounded"></hr>
       </h1>
 
       <div className="flex flex-col space-y-28">
@@ -50,13 +50,13 @@ const ProjectsSection = () => {
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-                  <div className=" md:w-1/2">
+                  <div className=" md:w-1/2 md:pl-20 ">
                     <Link href={project.link}>
                       <Image
                         src={project.image}
                         alt=""
-                        width={1000}
-                        height={1000}
+                        width={350}
+                        height={350}
                         className="rounded-xl shadow-xl hover:opacity-70 hover:blur-sm"
                       />
                     </Link>
@@ -81,11 +81,11 @@ const ProjectsSection = () => {
                         />
                       </Link>
                     </div> */}
-                    <div className="flex flex-row align-bottom space-x-4">
-                        <FaNodeJs size={30}/>
-                        <SiJavascript size={30}/>
-                        { project.tech === 'typescript' ? (<SiTypescript size={30}/>) : undefined }
-                        <BsFillDatabaseFill size={30}/>
+                    <div className="flex flex-row align-bottom space-x-4 ">
+                        <FaNodeJs size={30} className="fill-gray-400"/>
+                        <SiJavascript size={30}className="fill-gray-400 rounded-sm"/>
+                        { project.tech === 'typescript' ? (<SiTypescript size={30} className="fill-gray-400 rounded-sm"/>) : undefined }
+                        <BsFillDatabaseFill size={30} className="fill-gray-400"/>
                     </div>
                   </div>
                 </div>

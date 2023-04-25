@@ -19,7 +19,7 @@ const HeroSection = () => {
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-3xl font-bold sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="text-3xl font-bold mt-2 sm:text-5xl md:text-6xl lg:text-7xl">
              SyukranDev
           </h1>
           <p className="text-lg mt-4 md:text-2xl">
@@ -32,7 +32,7 @@ const HeroSection = () => {
             Loves volleyball and cycling.
           </p>
           {/* --- */}
-          <div className="flex flex-row  space-x-2 mb-1">
+          <div className="flex flex-row  space-x-2 mb-1 justify-center md:justify-start">
             <a href="https://github.com/syukranDev" rel="noreferrer" target="_blank">
               <AiOutlineGithub
                 className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"

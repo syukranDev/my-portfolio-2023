@@ -64,7 +64,7 @@ const AboutSection = () => {
                 )
               })}
             </div>
-            <div className="flex flex-row">
+            <div className="flex flex-row justify-center md:justify-start">
               <h1 className="text-2xl font-bold mb-1 mt-6">Use for fun</h1>
               <p className=" ml-3 mt-7 line-through italic">(still learning though)</p>
             </div>

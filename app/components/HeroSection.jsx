@@ -11,11 +11,12 @@ const HeroSection = () => {
       <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left">
         <div className="md:mt-2 md:w-1/2">
           <Image
-            src="/assets/myself.png"
+            src="/assets/myself2023.jpg"
             alt=""
             width={350}
             height={350}
-            className="rounded-full drop-shadow-2xl brightness-125"
+            className="rounded-full drop-shadow-2xl"
+            priority
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
@@ -65,9 +66,9 @@ const HeroSection = () => {
       <div className="flex flex-row items-center text-center justify-center ">
         <Link
           to="about"
-          activeClass="active"
-          spy={true}
-          smooth={true}
+          activeclass="active"
+          spy="true"
+          smooth="true"
           offset={-100}
           duration={500}
         >

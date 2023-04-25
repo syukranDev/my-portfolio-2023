@@ -16,7 +16,7 @@ const NAV_ITEMS = [
     },
     {
         label: 'About',
-        page: '/',
+        page: '#about',
     },
     {
         label: 'Projects',
@@ -63,7 +63,7 @@ export const Navbar = () => {
                                         href={item.page}
                                         className="block lg:inline-block font-semibold"
                                         
-                                        activeClass='active'
+                                        activeclass='active'
                                         spy={true}
                                         smooth={true}
                                         offset={-100}

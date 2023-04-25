@@ -19,7 +19,7 @@ const HeroSection = () => {
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-3xl font-bold mt-2 sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="text-3xl font-bold mt-10 sm:text-5xl md:text-6xl lg:text-7xl md:mt-2">
              SyukranDev
           </h1>
           <p className="text-lg mt-4 md:text-2xl">

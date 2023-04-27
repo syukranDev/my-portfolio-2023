@@ -33,13 +33,15 @@ export const Navbar = () => {
 
 
   return (
-     <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-gray-950">
+     <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 bg-white dark:bg-gray-950">
         <div className="justify-between md:items-center md:flex">
             <div>
                 <div className="flex items-center justify-between py-3">
                     <div className="md:py-5 md:block">
                         <div className="flex flex-row">
-                            <h2 className="font-sans text-2xl font-bold  antialiased">SyukranDev</h2>
+                            <a href="/">
+                                <h2 className="font-sans text-2xl font-bold  antialiased">SyukranDev</h2>
+                            </a>
                             <GoVerified size={20} className="mt-2 ml-2 fill-sky-400 antialiased"/>
                         </div>
                     </div>

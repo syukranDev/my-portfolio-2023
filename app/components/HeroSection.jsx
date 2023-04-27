@@ -4,6 +4,7 @@ import Image from "next/image"
 import { Link } from "react-scroll/modules"
 import { HiArrowDown } from "react-icons/hi"
 import { AiOutlineGithub, AiOutlineLinkedin} from 'react-icons/ai'
+import { BsEnvelopeAt } from 'react-icons/bs'
 
 const HeroSection = () => {
   return (
@@ -43,6 +44,12 @@ const HeroSection = () => {
             <a href="https://www.linkedin.com/in/syukransoleh" rel="noreferrer" target="_blank">
               <AiOutlineLinkedin
                 className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+                size={30}
+              />
+            </a>
+            <a href="/connect">
+              <BsEnvelopeAt
+                className="pl-0.5 antialiased hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
                 size={30}
               />
             </a>

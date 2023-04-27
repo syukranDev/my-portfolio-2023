@@ -8,7 +8,7 @@ const skills = [
   { skill: "RESTAPIs" },
   { skill: "NodeJS" },
   { skill: "ExpressJS" },
-  { skill: "ES6 Javascipt" },
+  { skill: "ES6 Javascript" },
   { skill: "Typescript" },
   { skill: "Git CI/CD" },
   { skill: "Postman" },
@@ -25,10 +25,12 @@ const skills2 = [
   { skill: "React" },
   { skill: "NextJS" },
   { skill: "PocketBase" },
+  { skill: "GraphQL" },
   { skill: "Prisma" },
   { skill: "Vercel" },
+  { skill: "Amplify" },
   { skill: "Railway" },
-  { skill: "SQLLite" },
+  { skill: "SQLite" },
 ]
 
 const employmentHistory = [ 

@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'SyukranDev | Connect',
+  description: 'This page is to contact website owner.',
+}
+
 export default function page() {
   return (
       <div class="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12 ">

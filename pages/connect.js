@@ -27,7 +27,7 @@ export default function page() {
       body: JSON.stringify(values)
   }
 
-  await fetch('http://localhost/api/contact', options)
+  await fetch('https://syukrandev.vercel.app/api/contact', options)
       .then(res => res.json())
       .then((data, res) => {
         if(data) {

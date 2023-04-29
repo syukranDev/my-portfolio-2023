@@ -29,6 +29,8 @@ const skills2 = [
   { skill: "Prisma" },
   { skill: "Vercel" },
   { skill: "Amplify" },
+  { skill: "Next-auth" },
+  { skill: "OAuth 2.0" },
   { skill: "Railway" },
   { skill: "SQLite" },
 ]

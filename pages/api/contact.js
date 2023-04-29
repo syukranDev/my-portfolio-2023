@@ -1,6 +1,6 @@
 import connectMongo from "../../database/conn";
 import Contacts from "../../model/Schema"
-// import { hash } from "bcryptjs";
+import nodemailer from 'nodemailer';
 
 export default async function handler(req, res) {
     connectMongo().catch(e => res.json({ error: 'Connection database failed!'}))
@@ -22,9 +22,38 @@ export default async function handler(req, res) {
             message
         }).then(data => {
                 res.status(201).json({status: true, user: data})
+
+                // Send an emai notification to me
+                const transporter = nodemailer.createTransport({
+                    service: 'gmail',
+                    auth: {
+                      user: process.env.SMTP_FROM_EMAIL,
+                      pass: process.env.SMTP_PASSWORD
+                    }
+                  });
+                  
+                  const mailOptions = {
+                    from: process.env.SMTP_FROM_EMAIL,
+                    to: process.env.SMTP_TO_EMAIL,
+                    subject: 'New Message from syukranDev/contact',
+                    text: 'Message: ' + data.message + ' From: ' + data.email
+                  };
+                  
+                  transporter.sendMail(mailOptions, function(error, info){
+                    if (error) {
+                   console.log(error);
+                    } else {
+                      console.log('Email sent: ' + info.response);
+                      // do something useful
+                    }
+                  });
+
+
         }).catch(err => {
            return res.status(404).json({ err })
         })
+
+        
             
 
 

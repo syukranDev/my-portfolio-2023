@@ -1,0 +1,14 @@
+
+
+
+
+
+POST https://my-portfolio-2023-git-without-appdir-syukrandev.vercel.app/api/contact
+Content-Type: application/json
+
+{
+    "email" : "POk1j@gmail.com",
+    "message" : "Hi I want to know more about you please contact me at 012671234"
+}
+
+# GET http://localhost:3000/api/hello

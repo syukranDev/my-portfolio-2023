@@ -27,7 +27,7 @@ export default function page() {
       body: JSON.stringify(values)
   }
 
-  await fetch('http://localhost:3000/api/contact', options)
+  await fetch('http://localhost/api/contact', options)
       .then(res => res.json())
       .then((data, res) => {
         if(data) {

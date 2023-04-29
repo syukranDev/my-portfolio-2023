@@ -1,0 +1,14 @@
+
+
+
+
+
+POST http://localhost:3000/api/contact
+Content-Type: application/json
+
+{
+    "email" : "hhgfhgfs@gmail.com",
+    "message" : "Hi I want to know more about you please contact me at 012671234"
+}
+
+# GET http://localhost:3000/api/hello

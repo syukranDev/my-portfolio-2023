@@ -20,7 +20,7 @@ export default async function handler(req, res) {
         Contacts.create({ 
             email, 
             message
-        }).then(data => {
+        }).then(async data => {
                 res.status(201).json({status: true, user: data})
 
                 // Send an emai notification to me
@@ -39,7 +39,7 @@ export default async function handler(req, res) {
                     text: 'Message: ' + data.message + ' From: ' + data.email
                   };
                   
-                  transporter.sendMail(mailOptions, function(error, info){
+                  await transporter.sendMail(mailOptions, function(error, info){
                     if (error) {
                    console.log(error);
                     } else {

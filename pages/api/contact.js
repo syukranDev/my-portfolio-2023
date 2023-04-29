@@ -39,14 +39,17 @@ export default async function handler(req, res) {
                     text: 'Message: ' + data.message + ' From: ' + data.email
                   };
                   
-                  await transporter.sendMail(mailOptions, function(error, info){
-                    if (error) {
-                   console.log(error);
-                    } else {
-                      console.log('Email sent: ' + info.response);
-                      // do something useful
-                    }
-                  });
+                  await new Promise((resolve, reject) => {
+                      transporter.sendMail(mailOptions, function(error, info){
+                        if (error) {
+                          console.log(error)
+                          reject(err)
+                        } else {
+                          console.log('Email sent: ' + info.response)
+                          resolve(info.response)
+                        }
+                      });
+                  })
 
 
         }).catch(err => {

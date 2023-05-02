@@ -18,6 +18,9 @@ const skills = [
   { skill: "Linux Bash" },
   { skill: "Window CMD" },
   { skill: "JIRA" },
+  { skill: "OS Installation" },
+  { skill: "Computer Hardware Support" },
+  { skill: "Data Backup and Virtualization" },
 ]
 
 const skills2 = [

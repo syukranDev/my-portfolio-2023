@@ -30,6 +30,7 @@ const skills2 = [
   { skill: "PocketBase" },
   { skill: "GraphQL" },
   { skill: "Prisma" },
+  { skill: "Electron" },
   { skill: "Vercel" },
   { skill: "Amplify" },
   { skill: "Next-auth" },
